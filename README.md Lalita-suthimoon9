@@ -8,7 +8,7 @@
     </picture>
   </a>
 </h1>
-
+Lalita-suthimoon9 
 <p align="center">
   <img alt="Vercel OSS Program" src="https://vercel.com/oss/program-badge-2026.svg" height="24" />
   &nbsp;&nbsp;&nbsp;
@@ -16,7 +16,7 @@
   &nbsp;&nbsp;&nbsp;
   <img alt="SerpApi" src="docs/public/serpapi-logo-with-wordmark-gradient.svg" height="24" />
 </p>
-
+Lalita-suthimoon9 
 <p align="center">
   <a href="docs/i18n/README.zh.md">🇨🇳 中文</a> •
   <a href="docs/i18n/README.zh-tw.md">🇹🇼 繁體中文</a> •
@@ -51,9 +51,9 @@
   <a href="docs/i18n/README.da.md">🇩🇰 Dansk</a> •
   <a href="docs/i18n/README.no.md">🇳🇴 Norsk</a>
 </p>
-
+Lalita-suthimoon9 
 <h4 align="center">Persistent memory compression system built for <a href="https://claude.com/claude-code" target="_blank">Claude Code</a>.</h4>
-
+Lalita-suthimoon9 
 <p align="center">
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/License-Apache%202.0-blue.svg" alt="License">
@@ -68,7 +68,7 @@
     <img src="https://awesome.re/mentioned-badge.svg" alt="Mentioned in Awesome Claude Code">
   </a>
 </p>
-
+Lalita-suthimoon9 
 <p align="center">
   <a href="https://trendshift.io/repositories/15496" target="_blank">
     <picture>
@@ -80,14 +80,14 @@
 </p>
 
 <br>
-
+Lalita-suthimoon9 
 <table align="center">
   <tr>
     <td align="center">
       <a href="https://github.com/thedotmack/claude-mem">
         <picture>
           <img
-            src="https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/cm-preview.gif"
+  Lalita-suthimoon9          src="https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/cm-preview.gif"
             alt="Claude-Mem Preview"
             width="500"
           >
@@ -125,77 +125,77 @@
   <a href="#troubleshooting">Troubleshooting</a> •
   <a href="#license">License</a>
 </p>
-
+Lalita-suthimoon9 
 <p align="center">
   Claude-Mem seamlessly preserves context across sessions by automatically capturing tool usage observations, generating semantic summaries, and making them available to future sessions. This enables Claude to maintain continuity of knowledge about projects even after sessions end or reconnect.
 </p>
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## Quick Start
-
+Lalita-suthimoon9 
 Install claude-mem for Grok Bot:
-
+Lalita-suthimoon9 
 ```bash
 npx claude-mem install --ide grok-bot
 ```
-
+Lalita-suthimoon9 
 Grok Bot has no host hooks, so we watch the chat log files. Default is CMEM Pro, the hosted memory. Local observer is opt-in: `--provider host`. Installing this plugin does not install Cursor.
-
+Lalita-suthimoon9 
 **Awareness push pilot (LFG + Orifice):** needle observations (`decision`, `bugfix`, `security_alert`, `sensitive`) are appended as dated `- YYYY-MM-DD [awareness] …` lines into that bot's `memory/log/YYYY-MM.md`. Grok Bot already re-reads the log from disk. This does not write `profile.md`, user-memory, or project memory. Disable with `CLAUDE_MEM_GROK_BOT_AWARENESS_ENABLED=false`.
-
+Lalita-suthimoon9 
 Install with a single command:
-
+Lalita-suthimoon9 
 ```bash
 npx claude-mem install
 ```
-
+Lalita-suthimoon9 
 The installer sets everything up first, then asks you to sign in to claude-mem in your browser (email magic link — no card required). Signing in provisions a memory key for your account and unlocks the **claude-mem observer**: memory that runs off-plan, free for up to 14 days, so you get up to 100% more usage from your plan. When the free trial ends, memory automatically falls back to your Anthropic plan unless you subscribe. After sign-in you pick your memory provider — the claude-mem observer, your own OpenRouter or Gemini key, or your Anthropic plan.
-
+Lalita-suthimoon9 
 Prefer to skip the sign-in? Pass an explicit `--provider` flag, set `CLAUDE_MEM_ONLINE_OPTIN=false`, or run in CI/non-interactive shells — the installer completes without any account interaction.
-
+Lalita-suthimoon9 
 Or install for OpenCode:
-
+Lalita-suthimoon9 
 ```bash
 npx claude-mem install --ide opencode
 ```
-
+Lalita-suthimoon9 
 Or install for Antigravity CLI ([setup guide](https://docs.claude-mem.ai/antigravity-cli/setup)):
-
+Lalita-suthimoon9 
 ```bash
 npx claude-mem install --ide antigravity
 ```
-
+Lalita-suthimoon9 
 Or install for OMP (Oh My Pi):
-
+Lalita-suthimoon9 
 ```bash
 npx claude-mem install --ide omp
 ```
-
+Lalita-suthimoon9 
 Or install from the plugin marketplace inside Claude Code:
-
+Lalita-suthimoon9 
 ```bash
 /plugin marketplace add thedotmack/claude-mem
-
+Lalita-suthimoon9 
 /plugin install claude-mem
 ```
-
+Lalita-suthimoon9 
 Restart Claude Code. Context from previous sessions will automatically appear in new sessions.
-
+Lalita-suthimoon9 
 > **Note:** Claude-Mem is also published on npm, but `npm install -g claude-mem` installs the **SDK/library only** — it does not register the plugin hooks or set up the worker service. Always install via `npx claude-mem install` or the `/plugin` commands above.
-
+Lalita-suthimoon9 
 ### 🦞 OpenClaw Gateway
-
+Lalita-suthimoon9 
 Install claude-mem as a persistent memory plugin on [OpenClaw](https://openclaw.ai) gateways with a single command:
-
+Lalita-suthimoon9 
 ```bash
 curl -fsSL https://install.cmem.ai/openclaw.sh | bash
 ```
-
+Lalita-suthimoon9 
 The installer handles dependencies, plugin setup, AI provider configuration, worker startup, and optional real-time observation feeds to Telegram, Discord, Slack, and more. See the [OpenClaw Integration Guide](https://docs.claude-mem.ai/openclaw-integration) for details.
-
+Lalita-suthimoon9 
 **Key Features:**
-
+Lalita-suthimoon9 
 - 🧠 **Persistent Memory** - Context survives across sessions
 - 📊 **Progressive Disclosure** - Layered memory retrieval with token cost visibility
 - 🔍 **Skill-Based Search** - Query your project history with mem-search skill
@@ -205,27 +205,27 @@ The installer handles dependencies, plugin setup, AI provider configuration, wor
 - ⚙️ **Context Configuration** - Fine-grained control over what context gets injected
 - 🤖 **Automatic Operation** - No manual intervention required
 - 🔗 **Citations** - Reference past observations with IDs through the worker API or view all in the web viewer
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## Documentation
-
+Lalita-suthimoon9 
 📚 **[View Full Documentation](https://docs.claude-mem.ai/)** - Browse on official website
-
+Lalita-suthimoon9 
 ### Getting Started
-
+Lalita-suthimoon9 
 - **[Installation Guide](https://docs.claude-mem.ai/installation)** - Quick start & advanced installation
 - **[Usage Guide](https://docs.claude-mem.ai/usage/getting-started)** - How Claude-Mem works automatically
 - **[Search Tools](https://docs.claude-mem.ai/usage/search-tools)** - Query your project history with natural language
 - **[Cloud Sync](https://docs.claude-mem.ai/cloud-sync)** - Back up your memories to cmem.ai — no daemon, the worker syncs on write
-
+Lalita-suthimoon9 
 ### Best Practices
-
+Lalita-suthimoon9 
 - **[Context Engineering](https://docs.claude-mem.ai/context-engineering)** - AI agent context optimization principles
 - **[Progressive Disclosure](https://docs.claude-mem.ai/progressive-disclosure)** - Philosophy behind Claude-Mem's context priming strategy
-
+Lalita-suthimoon9 
 ### Architecture
-
+Lalita-suthimoon9 
 - **[Overview](https://docs.claude-mem.ai/architecture/overview)** - System components & data flow
 - **[Architecture Evolution](https://docs.claude-mem.ai/architecture-evolution)** - The journey from v3 to v5
 - **[Hooks Architecture](https://docs.claude-mem.ai/hooks-architecture)** - How Claude-Mem uses lifecycle hooks
@@ -233,134 +233,134 @@ The installer handles dependencies, plugin setup, AI provider configuration, wor
 - **[Worker Service](https://docs.claude-mem.ai/architecture/worker-service)** - HTTP API & Bun management
 - **[Database](https://docs.claude-mem.ai/architecture/database)** - SQLite schema & FTS5 search
 - **[Search Architecture](https://docs.claude-mem.ai/architecture/search-architecture)** - Hybrid search with Chroma vector database
-
+Lalita-suthimoon9 
 ### Configuration & Development
-
+Lalita-suthimoon9 
 - **[Configuration](https://docs.claude-mem.ai/configuration)** - Environment variables & settings
 - **[Development](https://docs.claude-mem.ai/development)** - Building, testing, contributing
 - **[Release Branches](https://docs.claude-mem.ai/branches)** - Stable, core-dev, and community-edge branch flow
 - **[Troubleshooting](https://docs.claude-mem.ai/troubleshooting)** - Common issues & solutions
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## How It Works
-
+Lalita-suthimoon9 
 **Core Components:**
-
+Lalita-suthimoon9 
 1. **5 Lifecycle Hooks** - SessionStart, UserPromptSubmit, PostToolUse, Stop, SessionEnd (6 hook scripts)
 2. **Smart Install** - Cached dependency checker (pre-hook script, not a lifecycle hook)
 3. **Worker Service** - Local HTTP API with web viewer UI and search endpoints, managed by Bun
 4. **SQLite Database** - Stores sessions, observations, summaries
 5. **mem-search Skill** - Natural language queries with progressive disclosure
 6. **Chroma Vector Database** - Hybrid semantic + keyword search for intelligent context retrieval
-
+Lalita-suthimoon9 
 See [Architecture Overview](https://docs.claude-mem.ai/architecture/overview) for details.
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## MCP Search Tools
-
+Lalita-suthimoon9 
 Claude-Mem provides intelligent memory search through **4 MCP tools** following a token-efficient **3-layer workflow pattern**:
-
+Lalita-suthimoon9 
 **The 3-Layer Workflow:**
-
+Lalita-suthimoon9 
 1. **`search`** - Get compact index with IDs (~50-100 tokens/result)
 2. **`timeline`** - Get chronological context around interesting results
 3. **`get_observations`** - Fetch full details ONLY for filtered IDs (~500-1,000 tokens/result)
-
+Lalita-suthimoon9 
 **How It Works:**
 - Claude uses MCP tools to search your memory
 - Start with `search` to get an index of results
 - Use `timeline` to see what was happening around specific observations
 - Use `get_observations` to fetch full details for relevant IDs
 - **~10x token savings** by filtering before fetching details
-
+Lalita-suthimoon9 
 **Available MCP Tools:**
-
+Lalita-suthimoon9 
 1. **`search`** - Search memory index with full-text queries, filters by type/date/project
 2. **`timeline`** - Get chronological context around a specific observation or query
 3. **`get_observations`** - Fetch full observation details by IDs (always batch multiple IDs)
-
+Lalita-suthimoon9 
 **Example Usage:**
-
+Lalita-suthimoon9 
 ```typescript
 // Step 1: Search for index
 search(query="authentication bug", type="bugfix", limit=10)
-
+Lalita-suthimoon9 
 // Step 2: Review index, identify relevant IDs (e.g., #123, #456)
-
+Lalita-suthimoon9 
 // Step 3: Fetch full details
 get_observations(ids=[123, 456])
 ```
-
+Lalita-suthimoon9 
 See [Search Tools Guide](https://docs.claude-mem.ai/usage/search-tools) for detailed examples.
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## Release Branches
-
+Lalita-suthimoon9 
 Stable releases ship from `main` and are published to npm. `core-dev` and
 `community-edge` are source-run branches for early reliability fixes and
 community integrations. See **[Release Branches](https://docs.claude-mem.ai/branches)**
 for the branch flow and non-stable run instructions.
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## System Requirements
-
+Lalita-suthimoon9 
 - **Node.js**: 20.0.0 or higher
 - **Claude Code**: Latest version with plugin support
 - **Bun**: JavaScript runtime and process manager (auto-installed if missing)
 - **uv**: Python package manager for vector search (auto-installed if missing)
 - **SQLite 3**: For persistent storage (bundled)
-
+Lalita-suthimoon9 
 ---
 ### Windows Setup Notes
-
+Lalita-suthimoon9 
 If you see an error like:
-
+Lalita-suthimoon9 
 ```powershell
 npm : The term 'npm' is not recognized as the name of a cmdlet
 ```
-
+Lalita-suthimoon9 
 Make sure Node.js and npm are installed and added to your PATH. Download the latest Node.js installer from https://nodejs.org and restart your terminal after installation.
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## Configuration
-
+Lalita-suthimoon9 
 Settings are managed in `~/.claude-mem/settings.json` (auto-created with defaults on first run). Configure AI model, worker port, data directory, log level, and context injection settings.
-
+Lalita-suthimoon9 
 To include observations from every harness in Claude Code and Codex SessionStart context, set `"CLAUDE_MEM_SESSION_START_INCLUDE_ALL_SOURCES": "true"` in that file, or enable **Include all sources at session start** in the viewer settings. The default is `"false"`, which limits startup context to the current harness. The observation count limit still applies across the selected sources.
-
+Lalita-suthimoon9 
 See the **[Configuration Guide](https://docs.claude-mem.ai/configuration)** for all available settings and examples.
-
+Lalita-suthimoon9 
 ### Mode & Language Configuration
-
+Lalita-suthimoon9 
 Claude-Mem supports multiple workflow modes and languages via the `CLAUDE_MEM_MODE` setting.
-
+Lalita-suthimoon9 
 This option controls both:
 - The workflow behavior (e.g. code, chill, investigation)
 - The language used in generated observations
-
+Lalita-suthimoon9 
 #### How to Configure
-
+Lalita-suthimoon9 
 Edit your settings file at `~/.claude-mem/settings.json`:
-
+Lalita-suthimoon9 
 ```json
 {
   "CLAUDE_MEM_MODE": "code--zh"
 }
 ```
-
+Lalita-suthimoon9 
 Modes are defined in `plugin/modes/`. To see all available modes locally:
-
+Lalita-suthimoon9 
 ```bash
 ls ~/.claude/plugins/marketplaces/thedotmack/plugin/modes/
 ```
-
+Lalita-suthimoon9 
 #### Available Modes
-
+Lalita-suthimoon9 
 | Mode | Description |
 |------------|-------------------------|
 | `code` | Default English mode |
@@ -368,89 +368,90 @@ ls ~/.claude/plugins/marketplaces/thedotmack/plugin/modes/
 | `code--ja` | Japanese mode |
 
 Language-specific modes follow the pattern `code--[lang]` where `[lang]` is the ISO 639-1 language code (e.g., `zh` for Chinese, `ja` for Japanese, `es` for Spanish).
-
+Lalita-suthimoon9 
 > Note: `code--zh` (Simplified Chinese) is already built-in — no additional installation or plugin update is required.
-
+Lalita-suthimoon9 
 #### After Changing Mode
-
+Lalita-suthimoon9 
 Restart Claude Code to apply the new mode configuration.
 ---
-
+Lalita-suthimoon9 
 ## Development
-
+Lalita-suthimoon9 
 See the **[Development Guide](https://docs.claude-mem.ai/development)** for build instructions, testing, and contribution workflow.
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## Troubleshooting
-
+Lalita-suthimoon9 
 If experiencing issues, describe the problem to Claude and the troubleshoot skill will automatically diagnose and provide fixes.
-
+Lalita-suthimoon9 
 See the **[Troubleshooting Guide](https://docs.claude-mem.ai/troubleshooting)** for common issues and solutions.
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## Bug Reports
-
+Lalita-suthimoon9 
 Create comprehensive bug reports with the automated generator:
-
+Lalita-suthimoon9 
 ```bash
 cd ~/.claude/plugins/marketplaces/thedotmack
 npm run bug-report
 ```
-
+Lalita-suthimoon9 
 ## Contributing
-
+Lalita-suthimoon9 
 Contributions are welcome! Please:
-
+Lalita-suthimoon9 
 1. Fork the repository
 2. Create a feature branch
 3. Make your changes with tests
 4. Update documentation
 5. Submit a Pull Request
-
+Lalita-suthimoon9 
 Claude-Mem ships from three branches: `main` (stable), `core-dev`, and
 `community-edge`. Only `main` is published to npm; the others are run from
 source. See [Release Branches](https://docs.claude-mem.ai/branches) for the
 strategy and local run instructions.
-
+Lalita-suthimoon9 
 See [Development Guide](https://docs.claude-mem.ai/development) for contribution workflow.
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## License
-
+Lalita-suthimoon9 
 Claude-Mem is licensed under the Apache License 2.0.
-
+Lalita-suthimoon9 
 We chose Apache-2.0 because durable agentic memory should be easy to embed in
 developer tools, local agents, MCP servers, enterprise systems, robotics stacks,
 and production agent harnesses.
-
+Lalita-suthimoon9 
 See the [LICENSE](LICENSE) file for full details. See [docs/license.md](docs/license.md)
 and [docs/ip-boundary.md](docs/ip-boundary.md) for licensing scope and the
 open/commercial boundary.
-
+Lalita-suthimoon9 
 **Note on Ragtime**: The `ragtime/` directory is licensed under the **Apache License 2.0**. See [ragtime/LICENSE](ragtime/LICENSE) for details.
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ## Support
-
+Lalita-suthimoon9 
 - **Documentation**: [docs/](docs/)
 - **Issues**: [GitHub Issues](https://github.com/thedotmack/claude-mem/issues)
 - **Repository**: [github.com/thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
 - **Official X Account**: [@Claude_Memory](https://x.com/Claude_Memory)
 - **Official Discord**: [Join Discord](https://discord.com/invite/J4wttp9vDu)
 - **Author**: Alex Newman ([@thedotmack](https://github.com/thedotmack))
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 **Built with Claude Agent SDK** | **Works with Claude Code** | **Made with TypeScript**
-
+Lalita-suthimoon9 
 ---
-
+Lalita-suthimoon9 
 ### What About CMEM?
-
+Lalita-suthimoon9 
 CMEM is a token created by a 3rd party but officially embraced by the creator of Claude-Mem (Alex Newman, @thedotmack). The token acts as a community catalyst for growth and a vehicle for bringing CMEM to the developers and knowledge workers that need it most.
-
+Lalita-suthimoon9 
 Official BASE CA: 0x76b1967eec0ccaeb001bbbb2b40dc4badba31ba3
+Lalita-suthimoon9 
